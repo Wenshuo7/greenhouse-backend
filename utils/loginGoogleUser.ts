@@ -1,5 +1,5 @@
 import { knexInstance } from "../db";
-import { queryDb } from "./queryDb";
+
 
 type loginUserProps = {
   username: string;
