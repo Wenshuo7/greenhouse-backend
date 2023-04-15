@@ -3,8 +3,8 @@ import { Knex, knex } from "knex";
 const config: Knex.Config = {
   client: "mysql",
   connection: {
-    host: "localhost" /*change host if you need to*/,
-    port: 3306 /*change port if you need to*/,
+    host: "127.0.0.1",
+    port: 3306 ,
     user: "root",
     password: process.env.DB_PASSWORD,
     database: "greenhouse",
