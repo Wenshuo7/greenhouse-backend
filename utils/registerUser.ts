@@ -32,8 +32,8 @@ export const signup = async ({
   validateLength(firstName, "FirstName");
   validateLength(lastName, "LastName");
   validateLength(username, "Username");
-  validateAlpha(firstName, "FirstName");
-  validateAlpha(lastName, "LastName");
+  validateAlpha(validator.trim(firstName), "FirstName");
+  validateAlpha(validator.trim(lastName), "LastName");
 
   username = validator.escape(validator.trim(username));
   password = validator.escape(validator.trim(password));
