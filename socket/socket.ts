@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", /* provide the hosted frontend url when you do so */
+    origin: "https://greenhouse-frontend.vercel.app", /* provide the hosted frontend url when you do so */
     methods: ["GET", "POST"],
   },
 });
