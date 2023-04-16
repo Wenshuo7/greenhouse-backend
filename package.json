@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "build": "tsc && cp -r upload /mnt/render/",
+    "build": "tsc",
     "start": "node ./dist/index.js",
-    "watch": "nodemon --watch src --watch public --exec \"npm run build\""
+    "watch": "nodemon --watch upload --exec \"npm run build\""
   },
   "keywords": [],
   "author": "",
