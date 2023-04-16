@@ -1,0 +1,9 @@
+build:
+  steps:
+    - name: Install dependencies
+      shell: npm install
+      env:
+        NODE_ENV: production
+
+    - name: Copy static files to /mnt/render
+      shell: cp -r upload /mnt/render/
