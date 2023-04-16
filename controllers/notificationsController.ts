@@ -18,7 +18,7 @@ export const getNotificationsByReceiverId = async (req: any, res: any) => {
 
     res.status(200).json(notifications);
   } catch (error) {
-    res.staus(404).json({ msg: "Cannot find any any notifications" });
+    res.status(404).json({ msg: "Cannot find any any notifications" });
   }
 };
 
